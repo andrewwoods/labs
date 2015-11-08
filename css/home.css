@@ -1,0 +1,93 @@
+/**
+ * Stylesheet: Labs
+ * Author: Andrew Woods
+ */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #101010;
+  color: #f9f9f9;
+}
+
+h1 {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  font-size: 3em;
+  text-transform: uppercase;
+  background-color: #260C6B;
+  background: linear-gradient(-45deg, transparent 15px, #260C6B 0);
+  padding-left: 0.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+hr.small {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects {
+  margin: 2vh 2vw;
+}
+
+.row {
+  background-color: #2a2a2a;
+  background-color: rgba(42, 42, 42, 0.85);
+  color: #f9f9f9;
+  margin-bottom: 0.5em;
+}
+
+.tablet-content {
+  display: none;
+}
+
+@media (min-width: 30em) {
+  .tablet-content {
+    display: inline;
+  }
+}
+.desktop-content {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .desktop-content {
+    display: inline;
+  }
+}
+#main {
+  background-color: #101010;
+  background-image: url(images/seattle-night-skyline.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main-content {
+  background-color: #2a2a2a;
+  background-color: rgba(42, 42, 42, 0.85);
+  color: #f9f9f9;
+  padding: 0.5em;
+  width: 50vw;
+  height: 100vh;
+}

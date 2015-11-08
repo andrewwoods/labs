@@ -1,0 +1,30 @@
+//
+// Author: Andrew Woods
+// Date-Created: 2015 Sep 30 Wed
+//
+//------------------------------------------------------------------------------
+
+@mixin hide-content(){
+	display: none;
+}
+
+@mixin show-inline(){
+	display: inline;
+}
+
+@mixin show-block(){
+	display: block;
+}
+
+@mixin border-box(){
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+@mixin content-box(){
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}
+

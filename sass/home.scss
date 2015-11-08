@@ -1,0 +1,121 @@
+/**
+ * Stylesheet: Labs
+ * Author: Andrew Woods
+ */
+
+@import "lib/mixins";
+@import "lib/colors";
+
+//------------------------------------------------------------------------------
+//		FONTS
+//------------------------------------------------------------------------------
+$helvetica: "Helvetica Neue", Helvetica;
+$arial: Arial;
+
+
+//------------------------------------------------------------------------------
+//		COLORS
+//------------------------------------------------------------------------------
+$white: #f9f9f9;
+$black: #101010;
+$burple: #361294;
+$burple-dark: #260C6B;
+$gray-dark: #2a2a2a;
+$gray-dark-rgba: rgba(42, 42, 42, .85);
+
+
+//------------------------------------------------------------------------------
+//		LEGEND
+//------------------------------------------------------------------------------
+$page-text-color: $white;
+$page-bg-color: $black;
+
+* {
+	@include border-box();
+	font-family: $helvetica, $arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $page-bg-color;
+	color: $page-text-color;
+}
+
+h1 {
+	@include content-box();
+	font-size: 3em;
+	text-transform: uppercase;
+	background-color: $burple-dark;
+	background: linear-gradient(-45deg, transparent 15px, $burple-dark 0);
+	padding-left: 0.5em;
+}
+
+h2 {
+	font-size: 1.8em;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.5;
+	margin: 1em 0;
+}
+
+hr.small {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.projects {
+	margin: 2vh 2vw;
+}
+
+.row {
+	background-color: $gray-dark;
+	background-color: $gray-dark-rgba;
+	color: $white;
+	margin-bottom: 0.5em;
+}
+
+.tablet-content {
+	@include hide-content();
+}
+
+@media (min-width: 30em) {
+	.tablet-content {
+		@include show-inline();
+	}
+}
+
+
+.desktop-content {
+	@include hide-content();
+}
+
+@media (min-width: 40em) {
+	.desktop-content {
+		@include show-inline();
+	}
+}
+
+#main {
+	background-color: $black;
+	background-image: url(images/seattle-night-skyline.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#main-content {
+	background-color: $gray-dark;
+	background-color: $gray-dark-rgba;
+	color: $white;
+	padding: 0.5em;
+	width: 50vw;
+	height: 100vh;
+}
+
