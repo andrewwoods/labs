@@ -46,15 +46,20 @@ hr.small {
   margin-right: auto;
 }
 
-.projects {
-  margin: 2vh 2vw;
+.experiments {
+  margin: 2vh auto;
+  display: flex;
+  align-content: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.row {
-  background-color: #2a2a2a;
-  background-color: rgba(42, 42, 42, 0.85);
+.experiment {
+  background-color: rgba(80, 80, 80, 0.8);
   color: #f9f9f9;
-  margin-bottom: 0.5em;
+  padding: 0.5em 1em;
+  margin: 1em auto;
+  width: 45%;
 }
 
 .tablet-content {
