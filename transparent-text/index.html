@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transparent Text</title>
+	<meta name="author" content="Andrew Woods">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="page">
+	<div id="page-content">
+		<div class="category-name dark">
+			<h1>Chicago</h1>
+			<img src="images/chicago.jpg" alt="Photo of the Chicago skyline">
+		</div>
+		<p>I've always liked the idea of what I'm calling <strong>transparent text</strong>. I see this technique often, but it's usually done as a single image. It's where the letters, normally filled with a single color, are transparent, and allow a photo or other image to shine through. Some designers I talked to have referred to the effect as an alpha mask, text clipping, or blend mode. But to me, those terms don't really describe the final output. So <strong>transparent text</strong> it is ... for now</p>
+
+		<p>This effect is usually done in Photoshop. However, I wanted to be able to implement it with real HTML text, because accessibility is important. I discovered <a href="http://codepen.io/dudleystorey/pen/aONdzJ">an implemention on CodePen</a>, which I re-implemented above. The visual effect only works well on large text. This would be great design technique for a category or section header.</p>
+
+		<p>This technique uses the <a href="http://www.w3.org/TR/compositing-1/#propdef-mix-blend-mode">mix-blend-mode property</a> in CSS. As of November 2015, we don't have full <a href="http://caniuse.com/#feat=css-mixblendmode" data-percent="63%">browser support</a> yet.</p>
+
+	</div>
+	</div>
+</body>
+</html>
+
