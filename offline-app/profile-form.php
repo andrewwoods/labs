@@ -1,11 +1,12 @@
 
 <form action="/your/path" method="post" accept-charset="utf-8">
 
-	<div>
+	<div class="field">
+		<img src="library/images/nothumb.gif" alt="Profile Photo" />
 		<label for="your-photo">Photo Name</label>
 		<input type="file" id="your-photo" name="your_photo" value="">
 	</div>
-	<div>
+	<div class="field">
 		<label for="your-name">Your Name</label>
 		<input type="text" id="your-name" name="your_name" value="">
 	</div>
