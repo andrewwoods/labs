@@ -15,6 +15,9 @@
 // GENERAL STYLES
 //------------------------------------------------------------------------------
 
+* {
+	@include box-sizing();
+}
 
 body {
 	font-family: $sans-serif;

@@ -28,6 +28,10 @@
 	overflow:hidden;
 }
 
+.is-closed {
+	display: none;
+}
+
 .is-offline {
 	body {
 		background-color: #595959; // #595959
