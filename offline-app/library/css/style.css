@@ -554,6 +554,13 @@ p {
   }
 }
 
+.profile-result img {
+  float: left;
+}
+.profile-result .text-content {
+  clear: both;
+}
+
 @media print {
   /******************************************************************
   Site Name: andrewwoods.net
