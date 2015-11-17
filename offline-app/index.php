@@ -4,6 +4,7 @@
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="" role="main">
 		<?php require_once 'intro.php'; ?>
+		<?php require_once 'search-results.php'; ?>
 		<?php require_once 'profile-form.php'; ?>
 		<?php #require_once 'profile-data.php'; ?>
 		</div>

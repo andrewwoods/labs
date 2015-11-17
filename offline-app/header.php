@@ -33,6 +33,7 @@ $icons_dir = "/library/icons/";
 	<!-- Stylesheets and JS Libraries go here -->
 	<link rel="stylesheet" href="library/css/style.css">
 	<script src="library/js/form.js"></script>
+	<script src="library/js/search.js"></script>
 	<script src="library/js/offline.js"></script>
 </head>
 
