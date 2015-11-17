@@ -1,4 +1,19 @@
-var ProfileForm = function ( data ) {
+
+var MIXR = MIXR || {};
+MIXR.VERSION = '0.1.0';
+MIXR.AUTHOR = 'Andrew Woods';
+
+MIXR.about = function(){
+	console.log( "About Mixr - Version " + MIXR.VERSION );
+	console.log( "Created By " + MIXR.AUTHOR );
+};
+
+/*
+ * ProfileForm Class
+ * -----------------
+ */
+
+MIXR.ProfileForm = function ( data ) {
 	console.log( 'inside ProfileForm' );
 	console.dir( data );
 	this.personName = data.your_name || '';
@@ -6,27 +21,12 @@ var ProfileForm = function ( data ) {
 	this.goodAt = data.good_at || '';
 }
 
-ProfileForm.prototype.update_storage = function( ){
-	console.log( 'Update Storage' );
-
+MIXR.ProfileForm.prototype.update_storage = function( data ){
+	window.localStorage.setItem( 'MyProfile', JSON.stringify( data ) );
 };
 
-/*
-var Student = function( config ) {
-    // Call the Parent Constructor
-    Person.call(this, config);
-
-    // Initialize the student-specific properties
-    this.studentId =  config.studentId || 0;
+MIXR.ProfileForm.prototype.get_storage = function(){
+	return window.localStorage.get( 'MyProfile' );
 };
 
-Student.prototype = Object.create(Person.prototype);
-
-// Set the "constructor" property to refer to Student
-Student.prototype.constructor = Student;
-
-
-var aw = new Student( {name: 'Andrew Woods', size: '4 oz', height: '6 foot 1 inches', } );
-
-*/
 

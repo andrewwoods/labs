@@ -1,3 +1,4 @@
+
 /*
 	document.querySelector - Returns the first element within the document that matches the specified group of selectors
 
@@ -25,9 +26,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		window.addEventListener("offline", function() {
 			console.log('The Site went offline');
 			document.getElementsByTagName("html")[0].classList.add('is-offline');
-
-			
 		});
+
+
+		var profileResults = document.getElementsByClassName("profile-result");
+		for ( var i = 0, max = profileResults.length; i < max; i++ ) {
+			var resultsId = profileResults[i].getAttribute('id');
+			var contentId = resultsId + '-content';
+			profileResults[i].addEventListener( 'click', function( e ){
+				MIXR.SearchResults.toggleItem( contentId );
+			});
+		}
+
 
 		window.addEventListener("submit", function(e){
 			console.log( "the form was submitted" );
@@ -53,20 +63,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				form_data.website = website;
 
 				console.log( "instantiate ProfileForm" );
-				var profile_form = new ProfileForm( form_data );
+				var profile_form = new MIXR.ProfileForm( form_data );
 
 				console.log( "ProfileForm get_form_data" );
-				profile_form.update_storage();
+				profile_form.update_storage( form_data );
 			} else {
 				console.log( " Submit to the server." );
 			}
 		});
 
-
 	}
-
-
-
 
 	if ( ! navigator.onLine ) {
 		document.getElementsByTagName("html")[0].classList.add('is-offline');
