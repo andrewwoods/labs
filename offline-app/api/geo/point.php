@@ -52,6 +52,26 @@ class Point {
 		return $this->latitude . ', ' . $this->longitude;
 	}
 
+
+	/**
+	 * Return the latitude
+	 *
+	 * @return float
+	 */
+	public function getLatitude() {
+		return $this->latitude;
+	}
+
+	/**
+	 * return the longitude
+	 *
+	 * @return float
+	 */
+	public function getLongitude() {
+		return $this->longitude;
+	}
+
+
 }
 
 
