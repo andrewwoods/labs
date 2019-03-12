@@ -26,3 +26,5 @@
 # Ignore Sass source map files.
 *.css.map
 
+
+/vendor/

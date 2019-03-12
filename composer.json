@@ -1,0 +1,30 @@
+{
+    "name": "andrewwoods/labs",
+    "description": "Website to display mini experiements",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Woods",
+            "email": "atwoods1@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "slim/slim": "^3.12",
+        "slim/php-view": "^2.2"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.4",
+        "phpunit/phpunit": "^7.5",
+        "phpstan/phpstan": "^0.11.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AWoods\\Labs\\": "src/"
+        },
+        "files": [
+        ]
+    }
+
+}
