@@ -24,6 +24,7 @@
             "AWoods\\Labs\\": "src/"
         },
         "files": [
+            "config/constants-app.php"
         ]
     }
 
