@@ -29,11 +29,9 @@ $container['view'] = function ($container) {
 
 
 $app->get('/', function ($request, $response, $args) {
-    $content = "Hooray! It Works!";
+    $data = [];
 
-    return $this->view->render($response, '/index.php', [
-        'name' => $args['name']
-    ]);
+    return $this->view->render($response, '/index.php', $data);
 });
 
 $app->get('/hello/{name}', function ($request, $response, $args) {
