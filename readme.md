@@ -17,6 +17,10 @@ __Please limit the use of__:
 * Frameworks - Rails, Laravel, Django, etc
 * jQuery and other libraries
 
+You don't want to become to reliant on libraries and frameworks. Use just
+enough to serve the page to the browser.
+
+
 These are design experiements to run in the browser. __Don't use__: 
 
 * CMS - WordPress, Drupal, Joomla
@@ -27,12 +31,15 @@ These are design experiements to run in the browser. __Don't use__:
 
 Remember, the point is to push design, and the web, forward.
 
-* __Avoid__ designing for a single browser e.g. "Best viewed in [browser name]"
+* __Avoid__ designing for a single browser e.g. "Best viewed in [browser
+  name]"
 * __Avoid__ relying on server side technology
 
-As for things that aren't explicitly listed but are considering using, ask yourself: 
+As for things that aren't explicitly listed, but you are considering
+using, ask yourself:
 
 * Does it make the open web better?
 * Will it lock someone in to a particular technology?
 
 Other than that ... __go crazy. Push the limits!__
+
