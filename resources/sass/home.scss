@@ -18,6 +18,7 @@ $arial: Arial;
 //------------------------------------------------------------------------------
 $white: #f9f9f9;
 $black: #101010;
+$orange: #f56848;
 $burple: #361294;
 $burple-dark: #260C6B;
 $gray-dark: #2a2a2a;
@@ -48,8 +49,7 @@ h1 {
 	@include content-box();
 	font-size: 3em;
 	text-transform: uppercase;
-	background-color: $burple-dark;
-	background: linear-gradient(-45deg, transparent 15px, $burple-dark 0);
+	background-color: $orange;
 	padding-left: 0.5em;
 }
 
@@ -121,7 +121,7 @@ hr.small {
 	background-color: $gray-dark;
 	background-color: $gray-dark-rgba;
 	color: $white;
-	padding: 0.5em;
+	padding: 1.0em;
 	width: 50vw;
 	height: 100vh;
 }
